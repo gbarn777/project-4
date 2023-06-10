@@ -7,7 +7,7 @@
 1. Miguel Ari - https://github.com/Miguel-Ari
 2. Grace Barnett - https://github.com/gbarn777
 3. Ivan Galeano - https://github.com/igaleano2
-4. Cameron Leslie - 
+4. Cameron Leslie - https://github.com/CameronLeslie1
 5. Angela Narag- https://github.com/angelanarag
 6. Tanaz Sayan - 
 
