@@ -37,25 +37,32 @@ The objective of this project is to leverage historical stock data from Yahoo Fi
 <u>Data:</u>
 
 1. Daily stock closing prices for Goldman Sach (Ticker: GS) from Yahoo Finance
+    * Majority of the models used at minimum 3 years worth of data ending June 1, 2023
+    * Depending on the model, historical data was increased
 2. Federal Funds Effective Rate from FRED
+    * Downloaded the rate from the Federal Reserve Economic Data online database
 3. Bollinger Bands
+    * Calculated the Bollinger Bands based on the Goldman Sachs Historical Price Data
+    * Bollinger Bands are used to assess price volatility and identify potential price reversal points in financial markets
 
 
 <u>Models:</u>
 
 1. Linear Regression
-    * MAPE:
+    * MAPE: 1.59%
 2. Random Forest
-    * MAPE:
+    * MAPE: 1.45%
 3. ARIMA
-    * MAPE:
+    * MAPE: 1.32%
 4. LSTM Neural Network - Stock Closing Price only
-    * MAPE:
+    * MAPE: 1.84%
 5. LSTM Neural Network - Stock Closing Price and Federal Funds Effective Rate (Market Indicators)
-    * MAPE:
+    * MAPE: 1.34%
 6. LSTM Neural Network - Stock Closing Price and Technical Indicators: Volume, Bollinger Bands 
-    * MAPE: 
+    * MAPE: 1.19%
 
 
 <u>Conclusion:</u>
 
+* Based on the performance metrics of each model, the LSTM neural network (Model 6) had the best MAPE value. 
+* However, ARIMA model, provided that it only used Closing Prices (from 1995 to 2023) came close. 
