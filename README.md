@@ -50,19 +50,34 @@ The objective of this project is to leverage historical stock data from Yahoo Fi
 
 1. Linear Regression
     * MAPE: 1.59%
+    * Dataset - Goldman Sachs daily Closing Prices only
+    * Date Range - June 2020 to June 2023
 2. Random Forest
     * MAPE: 1.45%
+    * Dataset - Goldman Sachs daily Closing Prices only
+    * Date Range - June 2020 to June 2023
 3. ARIMA
     * MAPE: 1.32%
+    * Dataset - Goldman Sachs daily Closing Prices only
+    * Date Range - May 1995 to June 2023
 4. LSTM Neural Network - Stock Closing Price only
     * MAPE: 1.84%
+    * Dataset - Goldman Sachs daily Closing Prices only
+    * Date Range - January 2019 to May 2023
 5. LSTM Neural Network - Stock Closing Price and Federal Funds Effective Rate (Market Indicators)
     * MAPE: 1.34%
+    * Dataset - Goldman Sachs daily Closing Prices and the daily Federal Funds Effective Rate from FRED
+    * Date Range - January 2019 to May 2023
 6. LSTM Neural Network - Stock Closing Price and Technical Indicators: Volume, Bollinger Bands 
     * MAPE: 1.19%
+    * Dataset - Goldman Sachs daily Closing Price, daily Stock Volume, Bollinger Bands: Middle, Upper and Lower bands
+    * Date Range - February 2016 to May 2023
 
 
 <u>Conclusion:</u>
 
 * Based on the performance metrics of each model, the LSTM neural network (Model 6) had the best MAPE value. 
 * However, ARIMA model, provided that it only used Closing Prices (from 1995 to 2023) came close. 
+* LSTM model is better suited to predict the stock market given that It excels at capturing nonlinear relationships, allowing it to capture complex patterns and relationships between stock market features.
+* Stock market behavior is influenced by numerous factors, including economic indicators, geopolitical events, investor sentiment, and unforeseen events. ML models may struggle to capture the full complexity and interplay of these factors.
+
